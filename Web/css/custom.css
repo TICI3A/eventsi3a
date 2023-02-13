@@ -1,0 +1,49 @@
+:root{
+    --color1: #de6600;
+    --color2: #fea02f;
+    --color3: #ebd9c8;
+    --color4: #007a7a;
+    --color5: #003f5a;
+}
+
+.background-color1{background-color: var(--color1);}
+.background-color2{background-color: var(--color2);}
+.background-color3{background-color: var(--color3);}
+.background-color4{background-color: var(--color4);}
+.background-color5{background-color: var(--color5);}
+
+.text-color1{color: var(--color1);}
+.text-color2{color: var(--color2);}
+.text-color3{color: var(--color3);}
+.text-color4{color: var(--color4);}
+.text-color5{color: var(--color5);}
+
+.button.color5 {
+    background-color: var(--color5);
+    border-color: transparent;
+    color: #fff;
+}
+.button.color5.is-outlined {
+    background-color: transparent;
+    border-color: var(--color5);
+    color: var(--color5);
+}
+
+.tabs li.is-active a {
+    border-bottom-color: var(--color4);
+    color: var(--color4);
+}
+
+/* a:hover {
+    color: var(--color1);
+}*/
+a {
+    color: var(--color1);
+} 
+
+.university {
+    font-size: 0.75rem !important;
+}
+/* .commitee {
+    font-size: 1rem !important;
+} */
