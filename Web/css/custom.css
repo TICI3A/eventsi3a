@@ -41,7 +41,7 @@ a:hover {
     color: var(--color1);
     text-decoration: underline;
 } 
-a.button:hover, .buttons a:hover, .tab a:hover {
+a.button:hover, .buttons a:hover, .tab a:hover, .card a:hover {
     text-decoration: none;
 } 
 
