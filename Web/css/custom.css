@@ -37,6 +37,13 @@
 a {
     color: var(--color1);
 } 
+a:hover {
+    color: var(--color1);
+    text-decoration: underline;
+} 
+a.button:hover, .buttons a:hover, .tab a:hover {
+    text-decoration: none;
+} 
 
 .university {
     font-size: 0.75rem !important;
