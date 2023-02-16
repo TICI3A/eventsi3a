@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
-  <body>    
+  <body onload="changeDomain()">    
     
     <!-- *********************** CABECERA *********************** -->
     <div class="container px-6 py-4">
@@ -117,7 +117,9 @@
         <!-- *********************** INICIO EVENTO *********************** -->
         <div class="column is-one-quarter">          
           <div class="card">
-            <a href="https://eventos-template.i3a.es" target="_blank" title="Enter">
+            <!-- <a href="https://eventos-template.i3a.es" target="_blank" title="Enter"> -->
+            <a href="#" id="linkTemplate"  target="_blank" title="Enter">
+            <p id="demo"></p>
             <div class="card-image">
               <figure class="image is-4by3">
                 <img src="img/Evento.png" alt="Placeholder image">

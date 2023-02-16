@@ -101,3 +101,17 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+/* Cambio dominio según el entorno main o dev */
+
+
+function changeDomain() {
+  alert("The URL of this page is: " + window.location.href);
+  
+
+  
+
+  var entorno = "eyyyyyy";
+  document.getElementById("linkTemplate").setAttribute("href", newURL); 
+}
+
