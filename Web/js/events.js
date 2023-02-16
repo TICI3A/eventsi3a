@@ -106,8 +106,13 @@ function topFunction() {
 
 
 function changeDomain() {
-  alert("The URL of this page is: " + window.location.href);
-  
+  var miDom = window.location.href;
+  var result = miDom.indexOf("dev");
+  var rama = 'main';
+  if (result == -1 ){
+    rama = 'dev';
+  }
+  alert (rama)
 
   
 
