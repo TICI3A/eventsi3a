@@ -108,8 +108,10 @@ function topFunction() {
 function changeDomain() {
   var miDom = window.location.href;
   var result = miDom.indexOf("dev");
+  alert (result)
   var rama = 'main';
   if (result == -1 ){
+    alert('entro')
     rama = 'dev';
   }
   alert (rama)
