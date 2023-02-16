@@ -105,18 +105,16 @@ function topFunction() {
 /* Cambio dominio según el entorno main o dev */
 
 
-function changeDomain() {
+function changeDomain(baseUrl,path) {
+  alert('entrooooooooo')
   var miDom = window.location.href;
   var result = miDom.indexOf("dev");
-  var rama = 'main';
+  var newURL = baseUrl + '.i3a.es' + path;
   if (result != -1 ){
-    rama = 'dev';
+    newURL = baseUrl + '-dev.i3a.es' + path;
   }
-  alert (rama)
-
+alert(newURL)
   
-
-  var entorno = "eyyyyyy";
   document.getElementById("linkTemplate").setAttribute("href", newURL); 
 }
 
