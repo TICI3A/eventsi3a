@@ -99,7 +99,8 @@ function topFunction() {
  * @param {*} path //ruta al fihero despues del dominio
  */
 function createLink(id,moreUrl,path) {
-  var baseUrl = 'https://eventos';
+  var baseUrl = 'https://events';
+  var baseURLdev = 'https://eventos';
 
   //Cambio dominio según el entorno main o dev 
   var miDom = window.location.href;
@@ -111,5 +112,4 @@ function createLink(id,moreUrl,path) {
   
 //Cambio valor del href con la URL generada
   document.getElementById(id).setAttribute("href", newURL); 
-
 }
