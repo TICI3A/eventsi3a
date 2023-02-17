@@ -106,11 +106,10 @@ function topFunction() {
 
 
 function changeDomain() {
-  alert('entrooooooooo')
   var baseUrl = 'https://eventos';
 
   var myURL = document.getElementById("linkTemplate").getAttribute('moreUrl');
-  alert (myURL)
+  /* alert (myURL) */
 
   var path = document.getElementById("linkTemplate").getAttribute('path');
 
@@ -122,6 +121,6 @@ function changeDomain() {
   }
 alert(newURL)
   
-  /* document.getElementById("linkTemplate").setAttribute("href", newURL);  */
+  document.getElementById("linkTemplate").setAttribute("href", newURL); 
 }
 
