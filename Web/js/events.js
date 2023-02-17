@@ -1,17 +1,3 @@
-/* Funcionamiento del dropdown */
-/* const dropdown = document.querySelector(".dropdown");
-const active = document.querySelector(".is-active");
-document.body.addEventListener("click", function () {
-    if (active) {
-        dropdown.classList.remove("is-active");
-    }
-});
-dropdown.addEventListener("click", function (event) {
-    event.stopPropagation();
-    this.classList.toggle("is-active");
-}); */
-
-
 /* Funcionamiento del menú hamburguesa */
 const burguerIcon = document.querySelector(".navbar-burger");
 const navbarMenu = document.querySelector(".navbar-menu");
@@ -19,6 +5,7 @@ const navbarMenu = document.querySelector(".navbar-menu");
 burguerIcon.addEventListener("click", function () {
   navbarMenu.classList.toggle('is-active');
 });
+
 
 /* Tabs */
 function openTab(evt, tabName) {
@@ -34,6 +21,7 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " is-active";
 }
+
 
 /* Modal */
 document.addEventListener('DOMContentLoaded', () => {
@@ -79,10 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
         closeAllModals();
       }
     });
-  });
+});
 
-  /* Botón subir ariba */
-  // Get the button:
+
+/* Botón subir ariba */
+// Get the button:
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -102,17 +91,21 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-/* Cambio dominio según el entorno main o dev */
 
-
+/* Creo los href d elos links al cargar la pagina. */
 function changeDomain() {
   var baseUrl = 'https://eventos';
 
+  //Congresos
   var myURL = document.getElementById("linkTemplate").getAttribute('moreUrl');
-  /* alert (myURL) */
-
   var path = document.getElementById("linkTemplate").getAttribute('path');
 
+  //Menu años
+  var path2019 = document.getElementById("link2019").getAttribute('path');
+  var path2021 = document.getElementById("link2021").getAttribute('path');
+  var path2022 = document.getElementById("link2022").getAttribute('path');
+
+  //Cambio dominio según el entorno main o dev 
   var miDom = window.location.href;
   var result = miDom.indexOf("dev");
   var newURL = baseUrl + myURL + '.i3a.es' + path;
@@ -121,6 +114,14 @@ function changeDomain() {
   }
 alert(newURL)
   
+//Cambio valor del href con la URL generada
   document.getElementById("linkTemplate").setAttribute("href", newURL); 
+
+//Cambio valor del href con la URL generada en menu de años
+document.getElementById("link2019").setAttribute("href", newURL); 
 }
 
+
+function link2019() {
+  document.getElementById("link2019").setAttribute("href", 'https://www.google.com'); 
+}
