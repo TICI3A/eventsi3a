@@ -105,21 +105,23 @@ function topFunction() {
 /* Cambio dominio según el entorno main o dev */
 
 
-function changeDomain(moreUrl,path) {
+function changeDomain() {
   alert('entrooooooooo')
   var baseUrl = 'https://eventos';
 
   var myURL = document.getElementById("linkTemplate").getAttribute('moreUrl');
   alert (myURL)
 
-  /* var miDom = window.location.href;
+  var path = document.getElementById("linkTemplate").getAttribute('path');
+
+  var miDom = window.location.href;
   var result = miDom.indexOf("dev");
   var newURL = baseUrl + myURL + '.i3a.es' + path;
   if (result != -1 ){
-    newURL = baseUrl + '-dev.i3a.es' + path;
+    newURL = baseUrl + myURL + '-dev.i3a.es' + path;
   }
 alert(newURL)
   
-  document.getElementById("linkTemplate").setAttribute("href", newURL);  */
+  /* document.getElementById("linkTemplate").setAttribute("href", newURL);  */
 }
 
