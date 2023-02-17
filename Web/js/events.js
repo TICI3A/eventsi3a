@@ -93,35 +93,27 @@ function topFunction() {
 
 
 /* Creo los href d elos links al cargar la pagina. */
-function changeDomain() {
+function createLink(id,moreUrl,path) {
   var baseUrl = 'https://eventos';
 
-  //Congresos
-  var myURL = document.getElementById("linkTemplate").getAttribute('moreUrl');
-  var path = document.getElementById("linkTemplate").getAttribute('path');
+ /*  var myURL = document.getElementById("linkTemplate").getAttribute('moreUrl');
+  var path = document.getElementById("linkTemplate").getAttribute('path'); */
 
   //Menu años
-  var path2019 = document.getElementById("link2019").getAttribute('path');
+  /* var path2019 = document.getElementById("link2019").getAttribute('path');
   var path2021 = document.getElementById("link2021").getAttribute('path');
-  var path2022 = document.getElementById("link2022").getAttribute('path');
+  var path2022 = document.getElementById("link2022").getAttribute('path'); */
 
   //Cambio dominio según el entorno main o dev 
   var miDom = window.location.href;
   var result = miDom.indexOf("dev");
-  var newURL = baseUrl + myURL + '.i3a.es' + path;
+  var newURL = baseUrl + moreUrl + '.i3a.es' + path;
   if (result != -1 ){
-    newURL = baseUrl + myURL + '-dev.i3a.es' + path;
+    newURL = baseUrl + moreUrl + '-dev.i3a.es' + path;
   }
 alert(newURL)
   
 //Cambio valor del href con la URL generada
-  document.getElementById("linkTemplate").setAttribute("href", newURL); 
+  document.getElementById(id).setAttribute("href", newURL); 
 
-//Cambio valor del href con la URL generada en menu de años
-document.getElementById("link2019").setAttribute("href", newURL); 
-}
-
-
-function link2019() {
-  document.getElementById("link2019").setAttribute("href", 'https://www.google.com'); 
 }
