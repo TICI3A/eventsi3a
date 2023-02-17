@@ -1,17 +1,3 @@
-/* Funcionamiento del dropdown */
-/* const dropdown = document.querySelector(".dropdown");
-const active = document.querySelector(".is-active");
-document.body.addEventListener("click", function () {
-    if (active) {
-        dropdown.classList.remove("is-active");
-    }
-});
-dropdown.addEventListener("click", function (event) {
-    event.stopPropagation();
-    this.classList.toggle("is-active");
-}); */
-
-
 /* Funcionamiento del menú hamburguesa */
 const burguerIcon = document.querySelector(".navbar-burger");
 const navbarMenu = document.querySelector(".navbar-menu");
@@ -19,6 +5,7 @@ const navbarMenu = document.querySelector(".navbar-menu");
 burguerIcon.addEventListener("click", function () {
   navbarMenu.classList.toggle('is-active');
 });
+
 
 /* Tabs */
 function openTab(evt, tabName) {
@@ -34,6 +21,7 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " is-active";
 }
+
 
 /* Modal */
 document.addEventListener('DOMContentLoaded', () => {
@@ -79,4 +67,49 @@ document.addEventListener('DOMContentLoaded', () => {
         closeAllModals();
       }
     });
-  });
+});
+
+
+/* Botón subir ariba */
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+/**
+ * Creación del href de los links, que depende del entorno de desarrollo o real
+ * @param {*} id //id del link
+ * @param {*} moreUrl //si el dominio tiene una 2ª parte
+ * @param {*} path //ruta al fihero despues del dominio
+ */
+function createLink(id,moreUrl,path) {
+  var baseUrl = 'https://eventos';
+
+  //Cambio dominio según el entorno main o dev 
+  var miDom = window.location.href;
+  var result = miDom.indexOf("dev");
+  var newURL = baseUrl + moreUrl + '.i3a.es' + path;
+  if (result != -1 ){
+    newURL = baseUrl + moreUrl + '-dev.i3a.es' + path;
+  }
+  
+//Cambio valor del href con la URL generada
+  document.getElementById(id).setAttribute("href", newURL); 
+
+}

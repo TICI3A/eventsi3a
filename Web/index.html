@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
-  <body>    
+  <!-- <body onload="changeDomain()"> -->    
+  <body>
     
     <!-- *********************** CABECERA *********************** -->
     <div class="container px-6 py-4">
@@ -16,12 +17,20 @@
         <div class="column is-3">  
           <img src="img/Instituto_I3A_color.png" >
         </div>
-        <div class="column">  
-          <!-- <h1 class="title is-3 text-color5"><span class="">I3A Events</h1> -->
-        </div>
+        <!-- <div class="column has-text-centered">  
+          <h1 class="title is-3 text-color5"><span class="">I3A Events</h1>
+        </div> -->
 
         <div class="column">  
           <nav class="navbar" role="navigation" aria-label="main navigation">
+
+            <div class="navbar-brand">
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
 
             <div id="navbarYears" class="navbar-menu">
               <div class="navbar-end">
@@ -41,18 +50,18 @@
                         </button>
                       </div>
                       <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                        <div class="dropdown-content">
-                          <a href="#" class="dropdown-item">
+                        <div class="dropdown-content">                          
+                          <!-- <a onclick="createLink('link2023','','/2023.html')" id="link2023" href="#" path="/2023.html" class="dropdown-item">
                             2023
-                          </a>
-                          <a href="2022.html" class="dropdown-item">
+                          </a> -->
+                          <a onclick="createLink('link2022','','/2022.html')" id="link2022" href="#" path="/2022.html" class="dropdown-item">
                             2022
                           </a>
-                          <a href="#" class="dropdown-item">
+                          <a onclick="createLink('link2021','','/2021.html')" id="link2021" href="#" path="/2021.html" class="dropdown-item">
                             2021
                           </a>
-                          <a href="#" class="dropdown-item">
-                            2020
+                          <a onclick="createLink('link2019','','/2019.html')" id="link2019" href="#" path="/2019.html" class="dropdown-item">
+                            2019
                           </a>
                         </div>
                       </div>
@@ -78,14 +87,40 @@
       </h2>
     </div>
 
-    <!-- *********************** EVENTOS *********************** -->
-    <div class="container p-6">           
-      <div class="columns is-multiline">
+    
+    <div class="container p-6">    
+      
+      <div class="columns is-multiline ">
+        <div class="column is-5 p-0">
+          <figure class="image">
+            <img src="img/events-i3a.png">
+          </figure>
+        </div>
+        <div class="column has-background-light p-6">
+            <div class="block">
+              This website shows the events organized with the support of the I3A Institute.
+            </div>
+            <div class="block">
+              In this start page, appears all the upcoming events. You can enter the one you are interested in to see all the information about it.
+            </div>
+            <div class="block">
+              To access a closed event, filter by year in the top menu.
+            </div>
+            <div class="block">
+              More info about I3A events service at: <a href="#">xxxxxxxxxx</a> 
+            </div>
+        </div>
+      </div>
+
+      <!-- *********************** EVENTOS *********************** -->
+      <div class="columns is-multiline mt-4">
 
         <!-- *********************** INICIO EVENTO *********************** -->
         <div class="column is-one-quarter">          
           <div class="card">
-            <a href="events/2023/event-template.html" target="_blank" title="Enter">
+            <a href="https://eventos-template.i3a.es" target="_blank" title="Enter">
+            <!-- <a onclick="createLink('linkTemplate','-template','/pruebadepath')" href="#" id="linkTemplate" target="_blank" title="Enter"> -->
+            <p id="demo"></p>
             <div class="card-image">
               <figure class="image is-4by3">
                 <img src="img/Evento.png" alt="Placeholder image">
