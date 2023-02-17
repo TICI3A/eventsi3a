@@ -92,17 +92,14 @@ function topFunction() {
 }
 
 
-/* Creo los href d elos links al cargar la pagina. */
+/**
+ * Creación del href de los links, que depende del entorno de desarrollo o real
+ * @param {*} id //id del link
+ * @param {*} moreUrl //si el dominio tiene una 2ª parte
+ * @param {*} path //ruta al fihero despues del dominio
+ */
 function createLink(id,moreUrl,path) {
   var baseUrl = 'https://eventos';
-
- /*  var myURL = document.getElementById("linkTemplate").getAttribute('moreUrl');
-  var path = document.getElementById("linkTemplate").getAttribute('path'); */
-
-  //Menu años
-  /* var path2019 = document.getElementById("link2019").getAttribute('path');
-  var path2021 = document.getElementById("link2021").getAttribute('path');
-  var path2022 = document.getElementById("link2022").getAttribute('path'); */
 
   //Cambio dominio según el entorno main o dev 
   var miDom = window.location.href;
@@ -111,7 +108,6 @@ function createLink(id,moreUrl,path) {
   if (result != -1 ){
     newURL = baseUrl + moreUrl + '-dev.i3a.es' + path;
   }
-alert(newURL)
   
 //Cambio valor del href con la URL generada
   document.getElementById(id).setAttribute("href", newURL); 
