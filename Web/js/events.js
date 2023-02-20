@@ -105,9 +105,10 @@ function createLink(id,path) {
   var miDom = window.location.href;
   var result = miDom.indexOf("dev");  
   if (result != -1 ){
-    newURL = baseUrl + path;
+    //Si aparece dev en el dominio, es entorno dev
+    newURL = baseURLdev + path;
   } else {
-    var newURL = baseURLdev + path;
+    var newURL = baseUrl + path;
   }
   
 //Cambio valor del href con la URL generada
