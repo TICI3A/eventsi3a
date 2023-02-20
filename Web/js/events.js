@@ -103,9 +103,9 @@ function createLink(id,path) {
 
   //Cambio dominio según el entorno main o dev 
   var miDom = window.location.href;
-  var result = miDom.indexOf("dev");  
+  var result = miDom.indexOf("dev");
   alert(result)
-  var newURL = baseUrl + path
+  var newURL = baseUrl + path;
   if (result != -1 ){
     //Si aparece dev en el dominio, es entorno dev
     newURL = baseURLdev + path;
