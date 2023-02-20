@@ -78,6 +78,7 @@ let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+  alert('entroscrollFunction')
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
@@ -104,7 +105,6 @@ function createLink(id,path) {
   //Cambio dominio según el entorno main o dev 
   var miDom = window.location.href;
   var result = miDom.indexOf("dev");
-  alert(result)
   var newURL = baseUrl + path;
   if (result != -1 ){
     //Si aparece dev en el dominio, es entorno dev
