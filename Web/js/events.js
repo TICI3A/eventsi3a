@@ -104,11 +104,13 @@ function createLink(id,path) {
   //Cambio dominio según el entorno main o dev 
   var miDom = window.location.href;
   var result = miDom.indexOf("dev");  
+  alert (result);
   if (result != -1 ){
     newURL = baseUrl + path;
   } else {
     var newURL = baseUrl + path;
   }
+  alert (newURL)
   
 //Cambio valor del href con la URL generada
   document.getElementById(id).setAttribute("href", newURL); 
