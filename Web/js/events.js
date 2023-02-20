@@ -95,19 +95,20 @@ function topFunction() {
 /**
  * Creación del href de los links, que depende del entorno de desarrollo o real
  * @param {*} id //id del link
- * @param {*} moreUrl //si el dominio tiene una 2ª parte
  * @param {*} path //ruta al fihero despues del dominio
  */
-function createLink(id,moreUrl,path) {
-  var baseUrl = 'https://events';
-  var baseURLdev = 'https://eventos';
+function createLink(id,path) {
+  var baseUrl = 'https://events.i3a.es';
+  var baseURLdev = 'https://eventos-dev.i3a.es';
 
   //Cambio dominio según el entorno main o dev 
   var miDom = window.location.href;
-  var result = miDom.indexOf("dev");
-  var newURL = baseUrl + moreUrl + '.i3a.es' + path;
+  var result = miDom.indexOf("dev");  
   if (result != -1 ){
-    newURL = baseUrl + moreUrl + '-dev.i3a.es' + path;
+    //Si aparece dev en el dominio, es entorno dev
+    newURL = baseURLdev + path;
+  } else {
+    var newURL = baseUrl + path;
   }
   
 //Cambio valor del href con la URL generada
