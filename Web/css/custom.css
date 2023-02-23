@@ -61,3 +61,10 @@ a.button:hover, .buttons a:hover, .tab a:hover, .card a:hover {
   #myBtn:hover {
     background-color: var(--color5);  
   }
+
+  /* Ancho total debajo de fullhd 1408 */
+  @include until {
+    .anchoMob {
+        flex-basis: fit-content;
+    }
+  }
