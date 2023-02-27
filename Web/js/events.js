@@ -1,10 +1,10 @@
 /* Funcionamiento del menú hamburguesa */
-/* const burguerIcon = document.querySelector(".navbar-burger");
+const burguerIcon = document.querySelector(".navbar-burger");
 const navbarMenu = document.querySelector(".navbar-menu");
 
 burguerIcon.addEventListener("click", function () {
   navbarMenu.classList.toggle('is-active');
-}); */
+});
 
 
 /* Tabs */
