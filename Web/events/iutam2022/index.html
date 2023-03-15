@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IUTAM - 2022</title>
+    <link rel="stylesheet" href="https://events.i3a.es/css/bulma/bulma.css"> 
+    <link rel="stylesheet" href="https://events.i3a.es/css/custom.css"> <!--Poner dominio correspondiente, con o sin "-dev"-->
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>    
+
+    <div class="container p-4">
+        <div class="columns">
+            <div class="column is-3">  
+              <img src="img/iutam.jpg" style="max-height: 90px;">
+            </div>
+            <div class="column">
+                <!-- *********************** MENU *********************** -->
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">                        
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarEvent">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                
+                    <div id="navbarEvent" class="navbar-menu">
+                    <div class="navbar-start">   
+                    </div>
+                
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                        <div class="buttons">
+
+                          <!-- <a onclick="createLink('upcoming_btn','/index.html')" id="upcoming_btn" href="#">
+                            <button class="button color5 is-outlined mr-4">
+                              <span class="icon">
+                                <i class="fas fa-chevron-circle-right"></i>
+                              </span>
+                              <span>Upcoming events</span>
+                            </button>
+                            </a> -->
+
+                            <div class="dropdown is-hoverable">
+                                <div class="dropdown-trigger">
+                                    <button class="button color5 is-outlined mr-4" aria-haspopup="true" aria-controls="dropdown-menu">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-bars"></i>
+                                    </span>
+                                    <span>Menu</span>
+                                    <span class="icon is-small">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                    </button>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                    <a href="#schedule" class="dropdown-item">
+                                        Schedule
+                                    </a>  
+                                    <a href="#about-us" class="dropdown-item">
+                                    About us
+                                    </a> 
+                                    <a href="#authors-centre" class="dropdown-item">
+                                        Authors centre
+                                    </a>   
+                                    <a href="#registration" class="dropdown-item">
+                                        Registration
+                                    </a>
+                                    <a href="#venue" class="dropdown-item">
+                                        Venue
+                                    </a>
+                                    <a href="#sponsors" class="dropdown-item">
+                                        Sponsors & Partners
+                                    </a>
+                                    <a href="#contact" class="dropdown-item">
+                                        Contact
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </nav>
+                <!-- *********************** FIN MENU *********************** -->    
+            </div>
+        </div>                        
+    </div>        
+
+    <div class="container has-text-centered has-background-dark is-fluid p-6">
+        <h1 class="title is-1 has-text-white">IUTAM 2022</h1>
+        <h3 class="title is-2 mb-6 has-text-white">IUTAM SYMPOSIUM ON DATA-DRIVEN MECHANICS</h2>
+        <div class="block is-size-4 has-text-white">
+          26-28 October 2022 | Arts et Metiers Institute of Technology | Paris, France
+        </div>
+        <div>
+            <a class="button background-color1 has-text-white is-large mt-6  is-responsive">
+                REGISTER (closed)
+            </a>
+        </div>
+    </div>
+
+    <div class="container p-4">
+
+        <!-- *********************** Schedule *********************** -->
+        <section id="schedule" class="section">
+          <h3 class="title is-2 mb-6">Schedule</h3>
+          <div class="block">
+            <a href="files/IUTAM_v10.pdf" target="_blank"><span class="icon is-large"><i class="far fa-2x fa-file-pdf"></i></span>Download the program of the event</a>
+          </div>              
+          <!-- <div class="columns">
+            <div class="column is-10">
+              <figure class="image ">
+                <img src="img/programa-2-1024x519.jpg" alt="program">
+              </figure>            
+            </div>                        
+          </div>  -->                     
+        </section>   
+        
+        <!-- *********************** About *********************** -->
+        <section id="about-us" class="section">
+            <h3 class="title is-2 mb-6">About us</h3>
+            <div class="block has-text-weight-bold">
+              Welcome
+            </div>
+            <div class="block">
+              In their first centuries, scientific and engineering developments were dominated by empirical understanding which encapsulated the first paradigm of scientific discovery. After the Renaissance, the scientific revolution and the development of calculus led to a new scientific viewpoint whereby physical principles, laws of nature, and engineering models were established by proposing new theoretical constructs that could be verified through specific experiments. This was the second paradigm of scientific discovery. More recently, the computational era, or the third paradigm of discovery, has allowed us to solve complex and nonlinear scientific and engineering problems that were beyond our analytically tractable methodologies. Today, there is a new fourth paradigm of discovery, which is a data-driven science and engineering framework whereby complex models and physical laws are directly inferred from data.
+            </div>
+            <div class="block">
+              Therefore, there is increasing change in the objective of computational algorithms used in simulations. Until now, the purpose was to accurately discretize systems of linear and nonlinear continuum equations derived from physical laws, models, and principles; these equations were inferred from observation on limited experimental data and significantly simplified to make them analytically tractable. Today, the available experimental data and the complexity of equations are no longer a major limitation to the point that we may compute physical processes without resorting to analytical laws, principles, or models; we just need to predict the correct output from the system for a given input even when there is not a well-defined model.
+            </div>
+            <div class="block">
+              However, for this endeavor, we need new computational algorithms capable of learning the complex behavior of the system and of establishing those governing equations of the system directly from experimental data, with the flexibility of not having to rely on analytical equations. An example is the determination of the nonlinear behavior of solids and fluids under general conditions directly from measured data, without specifying the form of the constitutive relations.
+            </div>
+            <div class="block">
+              The purpose of this workshop on data-driven mechanics is to bring representative novel state-of-theart contributions in this line.
+            </div>
+            <div class="block  has-text-weight-bold">
+              Topics
+            </div>
+            <div class="content">
+            <ul>
+              <li>Data science: data reduction, data visualization, data representation, intrinsic dimensionality, completeness, useful versus useless data, metrics, data variability, …</li><li>Manifold learning and nonlinear dimensionality reduction</li><li>Model Order Reduction and metamodeling</li><li>Data clustering and classification</li><li>Advanced machine learning techniques, including deep learning</li><li>Physics-informed and physics-augmented learning</li><li>Digital Twins</li><li>Applications in mechanics:<ul><li>data-driven engineered materials &amp; meta-materials</li><li>data-driven constitutive models: databased, manifold-based, physicsinformed, …</li><li>data-driven computational inelasticity, with the issue related to the internal variables discovering and modeling</li><li>data-driven multi-scale bridging and homogenization</li><li>physics-informed mechanics, including thermodynamic informed learning</li><li>hybrid formulations</li></ul></li>
+            </ul>
+          </div>
+          </section>
+
+        <!-- *********************** Committees *********************** -->
+        <section class="section">            
+            <div class="tabs  is-boxed is-medium">
+                <ul>
+                  <li class="tab is-active" onclick="openTab(event,'organizers')">
+                    <a>
+                      <span class="icon is-small"><i class="fas fa-users"></i></span>
+                      <span>Chair & Cochairs</span>
+                    </a>                    
+                  </li>
+                  <li class="tab" onclick="openTab(event,'iutam_r')">
+                    <a>
+                      <span class="icon is-small"><i class="fas fa-users"></i></span>
+                      <span>IUTAM Representative</span>
+                    </a>
+                  </li> 
+                  <li class="tab" onclick="openTab(event,'scientific')">
+                    <a>
+                      <span class="icon is-small"><i class="fas fa-users"></i></span>
+                      <span>Local Comittee</span>
+                    </a>
+                  </li>                  
+                </ul>
+            </div>
+            <div class="container section">
+                <div id="organizers" class="content-tab" >
+                    <div class="columns is-multiline">
+                        <div class="column is-4">
+                            <p class="commitee has-text-primary-dark">Chair:</p>
+                            <p class="commitee">Francisco CHINESTA</p>
+                            <p class="university">Arts et Métiers Institute of Technology, France</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Elias CUETO</p><p class="university">University of Zaragoza, Spain</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Charbel FARHAT</p><p class="university">Stanford University, USA</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Benjamin KLUSEMANN</p><p class="university">Leuphana Universitat Luneburg, Germany<br>Helmholtz-Zentrum Hereon, Germany</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Pierre LADEVEZE</p><p class="university">ENS Paris-Saclay, France</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Wing Kam LIU</p><p class="university">Northwestern University, USA</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">John MICHOPOULOS</p><p class="university">U.S. Naval Research Laboratory, USA</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Michael ORTIZ</p><p class="university">Caltech, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="iutam_r" class="content-tab" style="display:none">
+                    <div class="columns is-multiline">
+                        <div class="column is-4">
+                            <p class="commitee">Norman FLECK</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="scientific" class="content-tab" style="display:none">
+                    <div class="columns is-multiline">
+                        <div class="column is-4">
+                            <p class="commitee">Francisco CHINESTA</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Elias CUETO</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Claire MANDON</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Victor CHAMPANEY</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Nicolas HASCOET</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Daniele DI LORENZO</p>
+                        </div>
+                        <div class="column is-4">
+                            <p class="commitee">Angelo PASQUALE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- *********************** Authors center *********************** -->
+    <div class="container is-fluid py-4  has-background-light">
+      <div class="container">
+        <section id="authors-centre" class="section">
+          <h3 class="title is-2 mb-6  mb-6">Authors centre</h3>   
+          <div class="columns is-multiline">
+
+            <div class="column is-3">                             
+              <div class="block">
+                <p class="title is-5">Important dates </p>                
+              </div>   
+              <div class="block">
+                <span class="icon mr-4"><i class="fas fa-calendar-day"></i></span>May 15th 2022: Title and short abstract<br>
+                <span class="icon mr-4"><i class="fas fa-calendar-day"></i></span>May 31th 2022: Decision and program<br>
+                <span class="icon mr-4"><i class="fas fa-calendar-day"></i></span>From 1st June to 31st July: Inscription
+              </div>
+            </div>     
+            
+            <div class="column is-4">                             
+                <div class="block">
+                  <p class="title is-5">Templates for abstract submission</p>                
+                </div>  
+                <div class="block">
+                  <a href="files/Surname1Surname2Surname3_abstract.doc"><span class="icon fa-2x is-large"><i class="far  fa-file-word"></i></span>Download the Word template</a>
+                </div>
+                <div class="block">
+                  <a href="files/IUTAM_LaTeX_abstract.zip"><span class="icon fa-2x is-large"><i class="far  fa-file-word"></i></span>Download the LaTex template</a>
+                </div>      
+              </div>  
+            
+            <div class="column is-5">
+              <div class="block">
+                <p class="title is-5">Abstracts</p>                
+              </div> 
+              <div class="block">
+                Authors are requested to submit an abstract of a maximum of two pages (including references and figures) to the conference contact email: iutamddmech@unizar.es The file must be in PDF format and the file name should conform to the following example: Surname1Surname2Surname3_abstract.pdf The abstract must be written in English. It must contain the full names, addresses and e-mails of the authors. In case of joint authorship, the name of the speaker who will present the paper at the conference should be underlined. The reference marks can be ommitted if all authors are from the same affiliation. All instructions are in the Word template.
+              </div>              
+              <div class="block">
+                <a class="button is-medium is-responsive background-color1 has-text-white " href="mailto:iutamddmech@unizar.es" target="_blank">
+                SEND
+                </a>
+              </div>
+            </div>               
+            
+             
+
+          </div>         
+        </section>
+      </div>
+    </div>
+
+    <!-- *********************** Registration *********************** -->
+    <div class="container is-fluid p-0 m-0 background-color5">
+      <div class="container">
+        <section id="registration" class="section has-text-white">
+            <h3 class="title is-2 mb-6 has-text-white has-text-centered	">Registration</h3>
+            <div class="columns is-multiline">
+                <div class="column is-2">  </div>
+                <div class="column is-one-third">          
+                    <div class="card">   
+                      <div class="card-content">                     
+                        <div class="content">
+                          <p class="is-size-3 text-color4 has-text-centered mb-1">STANDARD</p>
+                          <p class="is-size-1 has-text-centered has-text-weight-bold">500 €</p>
+                          <ul>
+                            <li>Welcome cocktail</li>
+                            <li>Breaks</li>
+                            <li>Lunches</li>
+                            <li>Banquet</li>
+                            <li>Visit at Musée des Arts et Métiers: <a href="https://www.arts-et-metiers.net/" target="_blank">https://www.arts-et-metiers.net/</a></li>
+                          </ul>
+                          <div class="has-text-centered mt-6">
+                              <button class="button background-color1 has-text-white is-medium" >
+                                  REGISTER (closed)
+                              </button>  
+                          </div>                                              
+                        </div>
+                      </div>
+                    </div>                    
+                </div>
+                <div class="column is-one-third">          
+                    <div class="card">   
+                      <div class="card-content">                     
+                        <div class="content">
+                          <p class="is-size-3 text-color4 has-text-centered mb-1">STUDENT</p>
+                          <p class="is-size-1 has-text-centered has-text-weight-bold">350 €</p>
+                          <ul>
+                            <li>Welcome cocktail</li>
+                            <li>Breaks</li>
+                            <li>Lunches</li>
+                          </ul>
+                          <div class="has-text-centered mt-6">
+                              <button class="button background-color1 has-text-white is-medium" >
+                                REGISTER (closed)
+                              </button>  
+                          </div>                                              
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>      
+                  <div class="column is-2">  </div>            
+            </div> 
+        
+        </section>
+      </div>
+    </div>    
+     
+    <div class="container p-4">
+        <!-- *********************** Venue *********************** -->
+        <section id="venue" class="section">
+            <h3 class="title is-2 mb-6">Venue</h3>    
+            <div class="columns">
+              
+                <!-- *********************** INICIO hotel *********************** -->
+                <div class="column is-6">          
+                  <div class="card">                    
+                    <div class="card-image">
+                      <figure class="image p-4">
+                        <img src="img/institute-artsetmetiers.png" alt="image">                        
+                      </figure>
+                    </div>
+                    <div class="card-content">                     
+                      <div class="content">
+                        <p class="is-size-3 text-color4 ">Amphitheatre BEZIER, Arts et Métiers Institute of Technology</p>
+                        <p><span class="icon is-small mr-4"><i class="fas fa-map-marker-alt"></i></span>151 Boulevard de l’Hôpital 75013 PARIS<br>
+                            <span class="icon is-small mr-4"><i class="fas fa-subway"></i></span> Metro : Place d’Italie or Campo Formio</p>
+                        <div class="has-text-right">
+                          <a href="https://artsetmetiers.fr/fr/campus/paris" target="_blank" class="button is-responsive">INFO</a> 
+                        </div>                                                                     
+                      </div>
+                    </div>
+                  </div>                    
+                </div>
+                <!-- *********************** FIN hotel *********************** -->  
+                
+        </section>  
+    </div>
+         
+    
+    <div class="container p-4">      
+
+        <!-- *********************** Organisers *********************** -->
+        <section id="sponsors" class="section">
+          <h3 class="title is-2 mb-6">Sponsors & Partners</h3>
+          <div class="columns is-multiline is-vcentered">
+            <div class="column is-3 has-text-centered  p-6">
+              <a href="https://i3a.unizar.es" target="_blank"><img src="img/California_Institute_of_Technology.jpg" ></a>
+            </div>
+            <div class="column is-3 has-text-centered p-6">
+                <a href="https://www.leuphana.de/" target="_blank"><img src="img/leuphana.jpg" ></a>
+              </div>
+              <div class="column is-3 has-text-centered p-6">
+                <a href="https://www.stanford.edu/" target="_blank"><img src="img/Logo-Stanford-1.jpg" ></a>
+              </div>
+              <div class="column is-3 has-text-centered p-6">
+                <a href="https://www.nrl.navy.mil/" target="_blank"><img src="img/naval.jpg" ></a>
+              </div>
+              <div class="column is-3 has-text-centered p-6">
+                <a href="https://www.northwestern.edu/" target="_blank"><img src="img/northwestern.jpg" ></a>
+              </div>
+              <div class="column is-3 has-text-centered p-6">
+                <a href="https://www.universite-paris-saclay.fr/" target="_blank"><img src="img/Logo_Universite_Paris-Saclay.jpg" ></a>
+              </div>
+              <div class="column is-3 has-text-centered p-6">
+                <a href="https://www.arts-et-metiers.net/" target="_blank"><img src="img/institute-artsetmetiers.png" ></a>
+              </div>
+            <div class="column is-3 has-text-centered p-6">
+              <a href="https://unizar.es" target="_blank"><img src="img/logoUZ-e1610697748691.png" ></a>
+            </div>
+          </div>          
+        </section>
+
+        <!-- *********************** Contact *********************** -->
+        <section id="contact" class="section">
+            <h3 class="title is-2 mb-6">Contact</h3>
+            <p>If you have any questions please send us an email and we will respond as soon as possible.</p><br>
+            <p>General contact:</p>
+            <span class="icon is-small mr-4"><i class="fas fa-at"></i></span><a href="mailto:iutamddmech@unizar.es">iutamddmech@unizar.es</a><br><br>
+            <p>Scientific and Technical requests:</p>
+            <span class="icon is-small mr-4"><i class="fas fa-at"></i></span><a href="mailto:Francisco.Chinesta@ensam.eu">Francisco.Chinesta@ensam.eu</a><br>
+            <span class="icon is-small mr-4"><i class="fas fa-at"></i></span><a href="mailto:ecueto@unizar.es">ecueto@unizar.es</a><br><br>
+            <p>Organization and logistic:</p>
+            <span class="icon is-small mr-4"><i class="fas fa-at"></i></span><a href="mailto:claire.mandon@ensam.eu">claire.mandon@ensam.eu</a><br><br>
+            <p>Payment and invoicing:</p>
+            <span class="icon is-small mr-4"><i class="fas fa-at"></i></span><a href="mailto:ecueto@unizar.es">ecueto@unizar.es​</a><br>
+        </section>     
+    </div>
+
+    <!-- Map -->
+    <div class="container is-fluid p-0 m-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5252.563944187271!2d2.357553!3d48.83376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6718c8bdc82cf%3A0x35f8de1b0a103495!2s151%20Bd%20de%20l&#39;H%C3%B4pital%2C%2075013%20Paris%2C%20Francia!5e0!3m2!1ses!2ses!4v1678881376983!5m2!1ses!2ses" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer m-0 has-background-black has-text-white">
+        <div class="content has-text-centered">
+          <p><a href="https://i3a.unizar.es/en/legal-notice-and-privacy-policy" target="_blank">Privacy Policy</a>. Developed by the <a target="_blank" href="https://i3a.unizar.es/">I3A Institute</a></p>
+        </div>
+        <div class="content has-text-centered">
+          <p><a href="https://iutam.org/" target="_blank">In this link you can visit the website of the International Union of Theoretical and Applied Mechanics</a></p>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="button background-color4 has-text-white">
+      <span class="icon is-medium">
+        <i class="fas fa-chevron-up"></i>
+      </span>
+    </button>
+
+    <!-- *********************** JS *********************** -->
+    <script src="https://events.i3a.es/js/events.js"></script> <!--Poner dominio correspondiente, con o sin "-dev"-->
+
+  </body>
+</html>
