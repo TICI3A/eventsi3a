@@ -6,3 +6,10 @@
 #sponsors img, #organization img {
     max-height: 55px;
 }
+ul {
+    list-style: disc;
+    margin-left: 1em;
+}
+li {
+    margin-top: 0.5em;
+}
