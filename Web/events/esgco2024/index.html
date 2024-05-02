@@ -69,7 +69,10 @@
                                     </a> 
                                     <a href="#registration" class="dropdown-item">
                                       Registration
-                                    </a>                                                                      
+                                    </a>    
+                                    <a href="#speakers" class="dropdown-item">
+                                      Speakers
+                                    </a>                                                                  
                                     <a href="#sponsors" class="dropdown-item">
                                         Sponsors & Partners
                                     </a>                                    
@@ -354,7 +357,41 @@
           </div>  
         </section>
       </div>
-    </div>    
+    </div>  
+    
+    
+    <div class="container p-4">   
+                
+      <!-- *********************** Speakers *********************** -->
+      <section id="speakers" class="section">
+          <h3 class="title is-2 mb-6">Speakers</h3>
+          <div class="columns is-multiline">
+
+              <!-- *********************** INICIO Speaker *********************** -->
+              <div class="column is-one-quarter">          
+                <div class="card">                    
+                  <div class="card-image">
+                    <figure class="image is-square">
+                      <img src="img/person.png" alt="Speaker image">                        
+                    </figure>
+                  </div>
+                  <div class="card-content">                     
+                    <div class="content">
+                      <p class="is-size-3 text-color4 mb-0">Gaetano Valenza</p>
+                      <p class="is-size-6 text-color4 mb-4">University of Pisa</p>
+                      <p class="is-size-6 text-color4 is-italic">"Physiological and Pathological Oscillations of Functional Brain-Heart Interplay"</p>
+                      <div class="has-text-centered">
+                          <button class="button js-modal-trigger" data-target="modal-js-biography-1">
+                              Biography
+                          </button>  
+                      </div>                                              
+                    </div>
+                  </div>
+                </div>                    
+              </div>
+              <!-- *********************** FIN Speaker *********************** -->
+          </div>
+      </section>
 
 
     <div class="container p-4">
@@ -428,6 +465,28 @@
             <i class="fas fa-chevron-up"></i>
         </span>
     </button>
+
+
+    <!-- *********************** Modals for speakers *********************** -->
+    <div id="modal-js-biography-1" class="modal">
+      <div class="modal-background"></div>
+    
+      <div class="modal-content">
+        <div class="box">
+          <p class="title is-3 text-color4 mb-6">Gaetano Valenza, M.Eng, Ph.D</p>
+          <p class="subtitle is-5 text-color4">"Physiological and Pathological Oscillations of Functional Brain-Heart Interplay"</p>
+          <div class="block">
+            Is currently an Associate Professor of Bioengineering at the University of Pisa, Italy, and is the head of the Neuro-Cardiovascular Intelligence Lab. His research interests include statistical and nonlinear biomedical signal and image processing, cardiovascular and neural modeling, physiologically-interpretable artificial intelligence systems, and wearable systems for physiological monitoring. 
+          </div>
+          <div class="block">
+            Applications of his research include assessing autonomic nervous system activity on cardiovascular control, brain-heart interactions, affective computing, and the assessment of mood and mental and neurological disorders. He has authored over 300 international scientific contributions in these fields, published in peer-reviewed international journals, conference proceedings, and books. He has been coordinating several international research projects and is a Senior Member of the IEEE and Chair of the IEEE-EMBS Technical Committee on Biomedical Signal Processing. Dr. Valenza serves as a reviewer for various research agencies and as an associate editor for numerous international scientific journals. Dr. Valenza organized the 11th ESGCO International Scientific Conference.
+          </div>
+        </div>
+      </div>
+    
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
 
     <!-- *********************** JS *********************** -->
     <script src="https://events.i3a.es/js/events.js"></script>
