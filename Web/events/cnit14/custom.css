@@ -1,0 +1,18 @@
+:root{
+    --color1: #df624c;
+    --color4: #1d94bd;
+    --color5: #2f404d;
+}
+/* body {
+    background-color: hsl(0, 0%, 96%);
+} */
+#sponsors img, #organization img {
+    max-height: 60px;
+}
+ul {
+    list-style: disc;
+    margin-left: 1em;
+}
+li {
+    margin-top: 0.5em;
+}
