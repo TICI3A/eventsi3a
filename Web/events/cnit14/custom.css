@@ -1,8 +1,13 @@
 :root{
-    --color1: #df624c;
-    --color4: #1d94bd;
-    --color5: #2f404d;
+    --color1: #C93E1A;/* Teja */
+    --color2: #FF915E;/* Melocotón */
+    --color3: #9AE5F4; /* Azul claro */
+    --color4: #48BDD9;/* Azul */
+    --color5: #486C2C; /* Verde */
+    --color6: #F05A2A;/* Naranja */     
 }
+.background-color6{background-color: var(--color6);}
+.text-color6{color: var(--color6);}
 /* body {
     background-color: hsl(0, 0%, 96%);
 } */
@@ -15,4 +20,7 @@ ul {
 }
 li {
     margin-top: 0.5em;
+}
+.logo {
+    max-height: 120px;
 }
