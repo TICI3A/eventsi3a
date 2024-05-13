@@ -14,22 +14,102 @@
 
 <body>
 
-    <!-- <div class="container p-4">
+    <div class="container p-4">
         <div class="columns">
-            <div class="column is-3"></div>
-            <div class="column is-6">
+            <div class="column is-4 is-offset-4 p-6"> 
                 <img src="img/logo.png" alt="logo">
             </div>
-            <div class="column is-3"></div>
-        </div>
-    </div> -->
+            <div class="column p-6">
+                <!-- *********************** MENU *********************** -->
+                <nav id="navbarEvent" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+                  <div class="navbar-brand">                        
+                      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarEvent">
+                          <span aria-hidden="true"></span>
+                          <span aria-hidden="true"></span>
+                          <span aria-hidden="true"></span>
+                      </a>
+                  </div>
+              
+                  <div id="navbarEvent" class="navbar-menu">
+                  <div class="navbar-start">  
+                    <!-- <div class="column is-4">  
+                      <img src="img/logo.png" alt="logo" style="max-height: 300px;">
+                    </div> -->
+                  </div>
+                  <div class="navbar-end">                        
+                    <div class="navbar-item p-4">
+                      <div class="buttons">   
+                        <div class="block is-size-4">
+                          <!-- <a href="https://twitter.com/ESGCO2024" target="_blank">
+                            <span class="icon text-color4 ml-4">
+                              <i class="fab fa-lg fa-twitter"></i>
+                            </span>
+                          </a>
+                          <a href="https://www.linkedin.com/showcase/101928611/admin/feed/posts/" target="_blank">
+                            <span class="icon text-color4 ml-4">
+                              <i class="fab fa-lg fa-linkedin"></i>
+                            </span>
+                          </a> -->
+                          <a href="#" title="Ver en español" class="ml-4"><img src="img/esp.png" ></a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                      <div class="navbar-item">
+                        <div class="dropdown is-hoverable">                              
+                            <div class="dropdown-trigger">
+                                <button class="button color5 is-outlined mr-4" aria-haspopup="true" aria-controls="dropdown-menu">
+                                <span class="icon is-small">
+                                    <i class="fas fa-bars"></i>
+                                </span>
+                                <span>Menu</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                                </button>
+                            </div>
+                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                              <div class="dropdown-content">                                    
+                              <a href="#authors-centre" class="dropdown-item">
+                                  Authors centre
+                              </a>
+                              <a href="#registration" class="dropdown-item">
+                                Registration
+                              </a>    
+                              <a href="#speakers" class="dropdown-item">
+                                Speakers
+                              </a>                                                                  
+                              <a href="#sponsors" class="dropdown-item">
+                                  Sponsors & Partners
+                              </a>                                    
+                              <a href="#contact" class="dropdown-item">
+                                  Contact
+                              </a>
+                              <!-- <a href="#organization" class="dropdown-item">
+                                  About 
+                              </a> -->
+                              </div>
+                          </div> 
+                        </div>                              
+                            
+                            
 
-    <div class="container p-6">  
+                      </div>
+                </div>
+                </div>
+            </nav>
+            <!-- *********************** FIN MENU *********************** --> 
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="container p-6">  
       <section>
-        <!-- <nav id="navbarEvent" class="navbar is-fixed-top" role="navigation" aria-label="main navigation" style="border-bottom: 2px #f5f5f5 solid; padding: 1rem 10rem;"> -->
-        <nav id="navbarEvent" class="navbar is-fixed-top pt-6 pb-6" role="navigation" aria-label="main navigation" style="border-bottom: 2px #f5f5f5 solid;" >
+        <nav id="navbarEvent" class="navbar is-fixed-top pt-4 pb-4 val" role="navigation" aria-label="main navigation" style="border-bottom: 2px #f5f5f5 solid;" >
           <div class="navbar-brand pl-6 pr-6">  
-              <img src="img/logo.jpg" alt="logo" >
+              <img src="img/logo.png" alt="logo" class="logo">
               <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarEvent">
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
@@ -39,40 +119,40 @@
       
           <div id="navbarEvent" class="navbar-menu">
           <div class="navbar-start ">  
-            <div class="navbar-item">
-              <h2 class="title is-3 text-color1  pl-6">14th National and 5th International <br>Conference in Engineering Thermodynamics</h2>
-              <div class="block is-size-4 text-color4  pl-6">4-6 June 2025  |  Zaragoza, Spain </div>
-            </div> 
-            <!-- <div class="navbar-item">
-              <div class="block is-size-4 text-color4  pl-6">4-6 June 2025  |  Zaragoza, Spain </div>
-            </div>  -->
-            <!-- <div class="columns is-vcentered">
-              <div class="column">
-                <h2 class="title is-3 text-color1">14th National and 5th International <br>Conference in Engineering Thermodynamics</h2>
-                <div class="block is-size-4 text-color4">4-6 June 2025  |  Zaragoza, Spain </div>                
-              </div>
-            </div> -->
-          </div>
-      
-          <div class="navbar-end">     
-              <div class="navbar-item">
-                <div class="block is-size-4">
+            <div class="navbar-item has-text-centered">
+              <h2 class="pl-6">
+                <span class="title is-3 text-color1 ">14<sup>th</sup> National and 5<sup>th</sup> International</span><br>
+                <span class="title is-2 text-color1">Conference in Engineering Thermodynamics</span><br><br>
+                <span class="block is-size-4 ">4-6 June 2025  |  Zaragoza, Spain  |  
                   <a href="" target="_blank">
-                    <span class="icon text-color1 ml-4">
+                    <span class="icon text-color4 ml-4">
                       <i class="fab fa-lg fa-twitter"></i>
                     </span>
                   </a>
                   <a href="" target="_blank">
-                    <span class="icon text-color1 ml-4">
+                    <span class="icon text-color4 ml-4">
                       <i class="fab fa-lg fa-linkedin"></i>
                     </span>
                   </a>
-                </div>
+                </span>
+
+                
+                  
+              </h2>
+              
+            </div> 
+            
+          </div>
+      
+          <div class="navbar-end">     
+              
+              <div class="navbar-item">
+                <a href="" title="Ver en español"><img src="../cnit14/img/esp.png"></a>
               </div>
               <div class="navbar-item">
                 <div class="buttons">   
                   
-                  <div class="dropdown is-hoverable">                              
+                  <div class="dropdown is-hoverable ">                              
                       <div class="dropdown-trigger">
                           <button class="button color5 is-outlined mr-4" aria-haspopup="true" aria-controls="dropdown-menu">
                           <span class="icon is-small">
@@ -118,9 +198,8 @@
           </div>
           </div>
       </nav>
-      <!-- *********************** FIN MENU *********************** -->
     </section>                    
-    </div>        
+    </div>         -->
 
     <!-- <div class="container has-text-centered background-color5 is-fluid p-6" >
         <h1 class="title is-1 has-text-white">14th CNIT</h1>
@@ -128,8 +207,16 @@
         <div class="block is-size-4 has-text-white">4-6 June 2025  |  Zaragoza, Spain</div>           
     </div> -->
 
+    <div class="container has-text-centered background-color5 is-fluid p-6">
+      <h1 class="mb-4">
+        <span class="title is-3 has-text-white">14<sup>th</sup> National and 5<sup>th</sup> International</span><br>
+        <span class="title is-1 has-text-white">Conference in Engineering Thermodynamics</span>
+      </h1>
+      <div class="block is-size-4 has-text-white">4-6 June 2025  |  Zaragoza, Spain</div>
+    </div>
+
     <!-- *********************** Announcement *********************** -->
-    <div class="container is-fluid pt-6 pb-4 background-color5">
+    <!-- <div class="container is-fluid pt-6 pb-4 background-color5">
       <div class="container pt-6">        
         <section id="about-us" class="section is-size-5 has-text-white">
           <div class="block pt-4">
@@ -140,6 +227,21 @@
             </div>            
         </section>
       </div>
+    </div> -->
+
+    <div class="container p-6">
+
+      <!-- *********************** Announcement *********************** -->
+      <section id="about-us" class="section is-size-5">
+          <!-- <h3 class="title is-2 mb-6">Early Announcement</h3> -->
+          <div class="block">
+            Dear Sir or Madame,
+          </div>
+          <div class="block">
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+          </div>
+      </section>
+
     </div>
 
     <!-- <div class="container p-4">
@@ -205,7 +307,7 @@
                       templates can be found here:
                       <div class="block mt-2 mb-4">
                         <a class="button  is-responsive background-color1 has-text-white " href="" target="_blank">
-                           templates
+                           TEMPLATE
                         </a> 
                       </div>
                     </li>
@@ -226,7 +328,7 @@
 
                       <div class="block mt-2 mb-4">
                         <a class="button  is-responsive background-color1 has-text-white " href="" target="_blank">
-                          Access to ...
+                          ACCESS TO PLATFORM
                         </a> 
                       </div>
                     </li>
@@ -273,27 +375,20 @@
 
 
     <!-- *********************** Registration *********************** -->
-    <div class="container is-fluid p-0 m-0 background-color5">
+    <div class="container is-fluid p-0 m-0 has-background-dark">
       <div class="container">
-        <section id="registration" class="section has-text-white">
-            <h3 class="title is-2  has-text-white has-text-centered	">Registration</h3>
-            <p class="is-size-5 has-text-centered mb-6">Price change on <span class="has-text-weight-bold">29 July</span></p>
+        <section id="registration" class="section">
+            <h3 class="title is-2 has-text-centered	has-text-white">Registration</h3>
+            <p class="is-size-5 has-text-centered has-text-white mb-6">Price change on <span class="has-text-weight-bold">29 July</span></p>
             <div class="columns is-multiline">
                 <div class="column is-2">  </div>
                 <div class="column is-one-third">          
                     <div class="card">   
                       <div class="card-content">                     
                         <div class="content">
-                          <p class="is-size-3 text-color4 has-text-centered">REGULAR</p>
+                          <p class="is-size-3 has-text-centered">REGULAR</p>
                           <p class="is-size-1 has-text-centered has-text-weight-bold mb-1">560 € <span class="is-size-5">Early</span></p> 
-                          <p class="is-size-1 has-text-centered has-text-weight-bold">610 € <span class="is-size-5">Late</span></p> 
-                          
-                          <!-- <ul>
-                            <li>Welcome cocktail</li>
-                            <li>Breaks</li>
-                            <li>Visit at Musée des Arts et Métiers: <a href="" target="_blank"></a></li>
-                          </ul> -->
-                                                                      
+                          <p class="is-size-1 has-text-centered has-text-weight-bold">610 € <span class="is-size-5">Late</span></p>    
                         </div>
                       </div>
                     </div>                    
@@ -302,14 +397,9 @@
                     <div class="card">   
                       <div class="card-content">                     
                         <div class="content">
-                          <p class="is-size-3 text-color4 has-text-centered">STUDENT</p>
+                          <p class="is-size-3 has-text-centered">STUDENT</p>
                           <p class="is-size-1 has-text-centered has-text-weight-bold mb-1">460 € <span class="is-size-5">Early</span></p> 
                           <p class="is-size-1 has-text-centered has-text-weight-bold">510 € <span class="is-size-5">Late</span></p> 
-                          <!-- <ul>
-                            <li>Welcome cocktail</li>
-                            <li>Lunches</li>
-                          </ul> -->
-                                                                 
                         </div>
                       </div>
                     </div>                    
@@ -317,8 +407,8 @@
                   <div class="column is-2">  </div>            
             </div> 
             <div class="has-text-centered mt-6">
-              <button class="button background-color1 has-text-white is-medium" >
-                  REGISTER (Coming soon...)
+              <button class="button background-color1 has-text-white is-large" >
+                <i class="far fa-edit mr-4"></i> REGISTER HERE
               </button>  
           </div>  
         </section>
@@ -343,9 +433,9 @@
                   </div>
                   <div class="card-content">                     
                     <div class="content has-text-centered">
-                      <p class="is-size-3 text-color4 mb-0">Nombre Apellido</p>
-                      <p class="is-size-6 text-color4 mb-4">University of XXXXXX</p>
-                      <p class="is-size-6 text-color4 is-italic">"Nombre de la charla Nombre de la charla Nombre de la charla"</p>
+                      <p class="is-size-3 mb-0">Nombre Apellido</p>
+                      <p class="is-size-6 mb-4">University of XXXXXX</p>
+                      <p class="is-size-6 is-italic">"Nombre de la charla Nombre de la charla Nombre de la charla"</p>
                       <div class=" mt-5">
                           <button class="button js-modal-trigger" data-target="modal-js-biography-1">
                               Biography
@@ -366,9 +456,9 @@
                   </div>
                   <div class="card-content">                     
                     <div class="content has-text-centered">
-                      <p class="is-size-3 text-color4 mb-0">Nombre Apellido</p>
-                      <p class="is-size-6 text-color4 mb-4">University of XXXXXX</p>
-                      <p class="is-size-6 text-color4 is-italic">"Nombre de la charla Nombre de la charla Nombre de la charla"</p>
+                      <p class="is-size-3 mb-0">Nombre Apellido</p>
+                      <p class="is-size-6 mb-4">University of XXXXXX</p>
+                      <p class="is-size-6 is-italic">"Nombre de la charla Nombre de la charla Nombre de la charla"</p>
                       <div class=" mt-5">
                           <button class="button js-modal-trigger" data-target="modal-js-biography-1">
                               Biography
@@ -389,9 +479,9 @@
                   </div>
                   <div class="card-content">                     
                     <div class="content has-text-centered">
-                      <p class="is-size-3 text-color4 mb-0">Nombre Apellido</p>
-                      <p class="is-size-6 text-color4 mb-4">University of XXXXXX</p>
-                      <p class="is-size-6 text-color4 is-italic">"Nombre de la charla Nombre de la charla Nombre de la charla"</p>
+                      <p class="is-size-3 mb-0">Nombre Apellido</p>
+                      <p class="is-size-6 mb-4">University of XXXXXX</p>
+                      <p class="is-size-6 is-italic">"Nombre de la charla Nombre de la charla Nombre de la charla"</p>
                       <div class=" mt-5">
                           <button class="button js-modal-trigger" data-target="modal-js-biography-1">
                               Biography
@@ -423,11 +513,11 @@
                 <a href="https://www.ciberisciii.es/" target="_blank"><img src="img/ciber.jpg" ></a>
               </div>  -->               
               <div class="column is-3 has-text-centered">
-                <a href="" target="_blank"><img src="img/logo.jpg" ></a>
+                <a href="" target="_blank"><img src="img/logo.png" ></a>
               </div>            
               <div class="column is-3 has-text-centered">
                 <!-- <i class="has-background-warning">Coming soon...</i> -->
-                <a href="" target="_blank"><img src="img/logo.jpg" ></a>
+                <a href="" target="_blank"><img src="img/logo.png" ></a>
               </div> 
               <div class="column is-3 has-text-centered">
                 <!-- <a href="https://es.mathworks.com/" target="_blank"><img src="img/mathworks.png" ></a> -->
@@ -445,7 +535,7 @@
         </section>  
 
         <!-- *********************** About organization *********************** -->
-        <section id="organization" class="section">
+        <!-- <section id="organization" class="section">
             <h3 class="title is-2 mb-6">About xxx</h3>    
             <div class="columns is-multiline is-vcentered ">
                 <div class="column  is-5">
@@ -453,23 +543,24 @@
                     <span class="icon is-small mr-4"><i class="fas fa-link"></i></span><a target="_blank" href="">https://xxxx/</a>
                 </div> 
                 <div class="column is-3 ">
-                    <a target="_blank" href="https://www.esgco.org/"><img src="img/logo.jpg" alt="logo xxx"></a>                    
+                    <a target="_blank" href=""><img src="img/logo.png" alt="logo xxx"></a>                    
                 </div>
                                
             </div>                 
-        </section>
+        </section> -->
 
     </div>
 
     <!-- Map -->
     <div class="container is-fluid p-0 m-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4868.551073944469!2d-0.889285814181533!3d41.68417673187823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd591366d88d444b%3A0x541b8e9e13f55b1!2sEdificio%20Betancourt!5e0!3m2!1ses!2ses!4v1706706836936!5m2!1ses!2ses" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4868.551073944469!2d-0.889285814181533!3d41.68417673187823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd591366d88d444b%3A0x541b8e9e13f55b1!2sEdificio%20Betancourt!5e0!3m2!1ses!2ses!4v1706706836936!5m2!1ses!2ses" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <iframe src="https://www.google.com/maps/d/embed?mid=1P5f9tLWST3U_H8kQfgpMsWlYBge8D3M&ehbc=2E312F&noprof=1" width="100%" height="350"></iframe>
     </div>
       
     <!-- Footer -->
-    <footer class="footer m-0 background-color5 has-text-white">
+    <footer class="footer m-0 has-background-dark has-text-white">
         <div class="content has-text-centered">
-        <p><a href="https://i3a.unizar.es/en/legal-notice-and-privacy-policy" target="_blank">Privacy Policy</a>. Developed by the <a target="_blank" href="https://i3a.unizar.es/">I3A Institute</a></p>
+        <p><a href="https://i3a.unizar.es/en/legal-notice-and-privacy-policy" target="_blank" class="has-text-white is-underlined">Privacy Policy</a>. Developed by the <a target="_blank" href="https://i3a.unizar.es/" class="has-text-white is-underlined">I3A Institute</a></p>
         </div>
     </footer>
 
