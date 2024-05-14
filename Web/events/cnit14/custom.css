@@ -4,10 +4,13 @@
     --color3: #9AE5F4; /* Azul claro */
     --color4: #48BDD9;/* Azul */
     --color5: #486C2C; /* Verde */
-    --color6: #F05A2A;/* Naranja */     
+    --color6: #F05A2A;/* Naranja */    
+    --color7: #2f404d; 
 }
 .background-color6{background-color: var(--color6);}
 .text-color6{color: var(--color6);}
+.background-color7{background-color: var(--color7);}
+.text-color7{color: var(--color7);}
 /* body {
     background-color: hsl(0, 0%, 96%);
 } */
