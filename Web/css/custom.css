@@ -62,6 +62,10 @@ a.button:hover, .buttons a:hover, .tab a:hover, .card a:hover {
     background-color: var(--color5);  
   }
 
+  .oculto {
+    display: none !important;
+  }
+
   /* Ancho total debajo de fullhd 1408 */
   @media screen and (max-width: 1279px) {
     .anchoMob {
