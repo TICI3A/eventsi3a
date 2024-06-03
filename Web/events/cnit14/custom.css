@@ -27,3 +27,6 @@ li {
 .logo {
     max-height: 120px;
 }
+.oculto {
+    display: none !important;
+  }
