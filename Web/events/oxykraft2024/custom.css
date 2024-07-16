@@ -13,6 +13,9 @@ ul {
 li {
     margin-top: 0.5em;
 }
+.horas {
+    width: 115px;
+}
 @media screen and (min-width: 769px) {
     .modal-content, .modal-card {
         width: 60%;
