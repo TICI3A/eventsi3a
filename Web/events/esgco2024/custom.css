@@ -23,7 +23,7 @@ li {
     .modal-content, .modal-card {
         width: 60%;
     }
-    #program table {
+    #program table, #organizers {
         width: 60%;
         margin: 0 auto;
     }
