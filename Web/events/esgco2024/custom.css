@@ -19,12 +19,17 @@ li {
 #program tr {
     background-color: whitesmoke ;
 }
+
 @media screen and (min-width: 769px) {
     .modal-content, .modal-card {
         width: 60%;
     }
     #program table {
         width: 60%;
+        margin: 0 auto;
+    }
+    .aviso {
+        max-width: 50%; 
         margin: 0 auto;
     }
 }
