@@ -27,6 +27,10 @@ li {
 .logo {
     max-height: 120px;
 }
+#committees img {
+    max-width: 128px; 
+    max-height: 128px;
+}
 .oculto {
     display: none !important;
   }
