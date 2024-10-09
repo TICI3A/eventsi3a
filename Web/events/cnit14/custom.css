@@ -34,3 +34,14 @@ li {
 .oculto {
     display: none !important;
   }
+
+  #programme tr {
+    background-color: whitesmoke ;
+}
+
+@media screen and (min-width: 769px) {    
+    #programme table, #organizers {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
