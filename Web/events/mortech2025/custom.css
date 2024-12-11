@@ -1,0 +1,47 @@
+:root{
+    --color1: #C93E1A;/* Teja */
+    --color2: #FF915E;/* Melocotón */
+    --color3: #9AE5F4; /* Azul claro */
+    --color4: #48BDD9;/* Azul */
+    --color5: #005690; /* Azul fondo */
+    --color6: #F05A2A;/* Naranja */    
+    --color7: #2f404d; 
+}
+.background-color6{background-color: var(--color6);}
+.text-color6{color: var(--color6);}
+.background-color7{background-color: var(--color7);}
+.text-color7{color: var(--color7);}
+/* body {
+    background-color: hsl(0, 0%, 96%);
+} */
+#sponsors img, #organization img {
+    max-height: 80px;
+}
+ul {
+    list-style: disc;
+    margin-left: 1em;
+}
+li {
+    margin-top: 0.5em;
+}
+.logo {
+    max-height: 120px;
+}
+#committees img {
+    max-width: 90px; 
+    /* max-height: 128px; */
+}
+.oculto {
+    display: none !important;
+  }
+
+  #programme tr {
+    background-color: whitesmoke ;
+}
+
+@media screen and (min-width: 769px) {    
+    #programme table{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
