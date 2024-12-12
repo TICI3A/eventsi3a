@@ -39,9 +39,18 @@ li {
     background-color: whitesmoke ;
 }
 
+.column-image {
+    aspect-ratio: 4/3;
+    padding: 0;
+}
+
+
 @media screen and (min-width: 769px) {    
     #programme table{
         width: 60%;
         margin: 0 auto;
+    }
+    .column-image {
+        /* height: 486px !important; */
     }
 }
