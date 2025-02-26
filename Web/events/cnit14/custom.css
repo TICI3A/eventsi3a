@@ -45,3 +45,9 @@ li {
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width: 768px) {   
+    .sostenible {
+        width: 40%;
+    }
+}
