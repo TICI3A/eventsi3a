@@ -31,6 +31,10 @@ li {
     max-width: 90px; 
     /* max-height: 128px; */
 }
+
+.commitee {
+    margin-top: 1rem !important;
+}
 .oculto {
     display: none !important;
   }
