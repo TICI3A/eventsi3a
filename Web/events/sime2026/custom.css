@@ -1,0 +1,57 @@
+:root{
+    --color1: #046fba;/* boton subir */
+    --color2: #046fba;/* boton */
+    --color3: #9AE5F4; /*  */
+    --color4: #9b724c;/* inscripciones */
+    --color5: #046fba; /* cabecera */
+    --color6: #F05A2A;/*  */    
+    --color7: #2f404d; 
+}
+.background-color6{background-color: var(--color6);}
+.text-color6{color: var(--color6);}
+.background-color7{background-color: var(--color7);}
+.text-color7{color: var(--color7);}
+/* body {
+    background-color: hsl(0, 0%, 96%);
+} */
+#sponsors img, #organization img {
+    max-height: 120px;
+}
+ul {
+    list-style: disc;
+    margin-left: 1em;
+}
+li {
+    margin-top: 0.5em;
+}
+.logo {
+    max-height: 120px;
+}
+#committees img {
+    max-width: 90px; 
+    /* max-height: 128px; */
+}
+
+.commitee {
+    margin-top: 1rem !important;
+}
+.oculto {
+    display: none !important;
+  }
+
+  #programme tr {
+    background-color: whitesmoke ;
+}
+
+@media screen and (min-width: 769px) {    
+    #programme table{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {   
+    .sostenible {
+        width: 40%;
+    }
+}
