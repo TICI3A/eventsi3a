@@ -35,6 +35,9 @@ li {
 .commitee {
     margin-top: 1rem !important;
 }
+.azulado {
+    color: var(--color5);
+}
 .oculto {
     display: none !important;
   }
