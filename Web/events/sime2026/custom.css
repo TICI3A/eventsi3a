@@ -8,6 +8,7 @@
     --color7: #2f404d; 
 }
 .background-color6{background-color: var(--color6);}
+.text-color5{color: var(--color5);}
 .text-color6{color: var(--color6);}
 .background-color7{background-color: var(--color7);}
 .text-color7{color: var(--color7);}
