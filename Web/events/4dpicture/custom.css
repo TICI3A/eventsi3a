@@ -1,0 +1,30 @@
+:root{
+    --color1: #287692;
+    --color4: #287692;
+    --color5: #372a40;
+}
+#sponsors img, #organization img {
+    max-height: 90px;
+}
+ul {
+    list-style: disc;
+    margin-left: 2em;
+}
+li {
+    margin-top: 0.5em;
+}
+.horas {
+    width: 115px;
+}
+.mesa{
+    color: var(--color1);
+    font-weight: bold;
+    border-bottom: 5px solid var(--color1);
+    width: 100px;
+    margin-bottom: 1em;
+}
+@media screen and (min-width: 769px) {
+    .modal-content, .modal-card {
+        width: 60%;
+    }
+}
