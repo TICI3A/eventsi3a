@@ -16,13 +16,31 @@ li {
 .horas {
     width: 115px;
 }
-.mesa{
+/* .mesa{
     color: var(--color1);
     font-weight: bold;
     border-bottom: 5px solid var(--color1);
-    width: 100px;
+    width: 80%; 
     margin-bottom: 1em;
+} */
+ .mesa {
+  position: relative;
+  display: inline-block; /* clave para que el ancho sea solo el del texto */
+  color: var(--color1);
+  margin: 1.5em 0 1em 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+ }
+.mesa::after {
+  content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    width: 80px;
+    height: 5px;
+    background: var(--color1);
 }
+
 @media screen and (min-width: 769px) {
     .modal-content, .modal-card {
         width: 60%;
